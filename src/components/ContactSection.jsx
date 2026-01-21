@@ -64,7 +64,7 @@ const ContactSection = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h3 className="text-4xl font-bold mb-6 text-blue-400">
+                        <h3 className="text-4xl font-bold mb-6 text-white">
                             {t.contact.title}
                         </h3>
                         <p className="text-gray-300 mb-8 text-lg">
@@ -162,7 +162,7 @@ const ContactSection = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h3 className="text-4xl font-bold mb-6 text-blue-400">
+                        <h3 className="text-4xl font-bold mb-6 text-white">
                             {t.contact.info.title}
                         </h3>
 
@@ -283,12 +283,7 @@ const ContactSection = () => {
             {/* Footer Bottom */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800">
                 {/* Logo and Copyright */}
-                <div className="flex flex-col items-center space-y-4">
-                    <img
-                        src="/images/logo.png"
-                        alt={companyData.name}
-                        className="h-[240px] w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
-                    />
+                <div className="flex flex-col items-center">
                     <p className="text-sm text-gray-500 text-center">
                         &copy; {new Date().getFullYear()} {companyData.name}. {t.footer.rights}
                     </p>

@@ -49,13 +49,13 @@ const AboutSection = () => {
                 >
                     {/* Mission Card */}
                     <motion.div
-                        className="p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300"
+                        className="p-8 bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300"
                         variants={itemVariants}
                     >
-                        <h3 className="text-3xl font-semibold text-blue-600 mb-4">
+                        <h3 className="text-3xl font-semibold text-primary-600 mb-4">
                             {t.about.mission}
                         </h3>
-                        <p className="text-gray-700 italic border-l-4 border-blue-400 pl-4 leading-relaxed">
+                        <p className="text-gray-700 italic border-l-4 border-primary-400 pl-4 leading-relaxed">
                             {companyData.mission[language]}
                         </p>
                     </motion.div>
@@ -85,8 +85,8 @@ const AboutSection = () => {
                     <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
                         {companyData.about[language]}
                     </p>
-                    <p className="mt-6 text-2xl font-medium text-blue-600">
-                        {t.about.focus} <span className="font-extrabold">{companyData.focus[language]}</span>
+                    <p className="mt-6 text-2xl font-medium text-gray-700">
+                        {t.about.focus} <span className="font-extrabold text-primary-600">{companyData.focus[language]}</span>
                     </p>
                 </motion.div>
             </div>

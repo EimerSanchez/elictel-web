@@ -10,7 +10,7 @@ const ServiceCard = ({ service, index, t }) => {
 
     return (
         <motion.div
-            className={`service-card ${index % 2 === 0 ? 'bg-white border border-blue-100' : 'bg-gradient-to-br from-blue-600 to-blue-700 text-white'}`}
+            className={`service-card ${index % 2 === 0 ? 'bg-white border border-primary-100' : 'bg-gradient-to-br from-primary-600 to-primary-700 text-white'}`}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -28,7 +28,7 @@ const ServiceCard = ({ service, index, t }) => {
                 </div>
             )}
 
-            <div className={`p-3 inline-flex items-center justify-center rounded-full mb-4 ${index % 2 === 0 ? 'bg-blue-100 text-blue-600' : 'bg-white text-blue-600'
+            <div className={`p-3 inline-flex items-center justify-center rounded-full mb-4 ${index % 2 === 0 ? 'bg-primary-100 text-primary-600' : 'bg-white text-primary-600'
                 }`}>
                 <Icon size={30} />
             </div>
@@ -37,14 +37,14 @@ const ServiceCard = ({ service, index, t }) => {
                 {service.title}
             </h4>
 
-            <p className={`text-base mb-4 ${index % 2 === 0 ? 'text-gray-600' : 'text-blue-100'}`}>
+            <p className={`text-base mb-4 ${index % 2 === 0 ? 'text-gray-600' : 'text-primary-100'}`}>
                 {service.description}
             </p>
 
             <AnimatePresence>
                 {isExpanded && (
                     <motion.p
-                        className={`text-sm italic mb-4 ${index % 2 === 0 ? 'text-gray-500' : 'text-blue-200'}`}
+                        className={`text-sm italic mb-4 ${index % 2 === 0 ? 'text-gray-500' : 'text-primary-200'}`}
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
@@ -57,7 +57,7 @@ const ServiceCard = ({ service, index, t }) => {
 
             <button
                 onClick={() => setIsExpanded(!isExpanded)}
-                className={`text-sm font-semibold ${index % 2 === 0 ? 'text-blue-600 hover:text-blue-700' : 'text-white hover:text-blue-100'
+                className={`text-sm font-semibold ${index % 2 === 0 ? 'text-primary-600 hover:text-primary-700' : 'text-white hover:text-primary-100'
                     } transition-colors`}
                 aria-expanded={isExpanded}
                 aria-label={isExpanded ? 'Show less' : 'Show more'}

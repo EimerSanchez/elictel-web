@@ -43,7 +43,7 @@ const Navigation = () => {
                     <img
                         src="/images/logo.png"
                         alt={companyData.name}
-                        className="h-48 w-auto transition-transform duration-300 hover:scale-105"
+                        className="h-24 w-auto transition-transform duration-300 hover:scale-105"
                     />
                 </div>
 
@@ -65,7 +65,7 @@ const Navigation = () => {
                 <div className="hidden md:flex items-center space-x-4">
                     <button
                         onClick={toggleLanguage}
-                        className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors"
+                        className="text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors"
                         aria-label="Toggle language"
                     >
                         {language === 'es' ? 'EN' : 'ES'}
@@ -109,7 +109,7 @@ const Navigation = () => {
                             <a
                                 key={item.target}
                                 onClick={() => scrollToSection(item.target)}
-                                className="block py-2 text-gray-600 hover:text-blue-600 font-medium cursor-pointer transition-colors"
+                                className="block py-2 text-gray-600 hover:text-primary-600 font-medium cursor-pointer transition-colors"
                             >
                                 {item.name}
                             </a>
@@ -117,7 +117,7 @@ const Navigation = () => {
                         <div className="flex items-center justify-between pt-3 border-t border-gray-200">
                             <button
                                 onClick={toggleLanguage}
-                                className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors"
+                                className="text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors"
                             >
                                 {language === 'es' ? 'English' : 'Español'}
                             </button>

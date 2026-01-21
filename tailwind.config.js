@@ -8,16 +8,16 @@ export default {
         extend: {
             colors: {
                 primary: {
-                    50: '#eff6ff',
-                    100: '#dbeafe',
-                    200: '#bfdbfe',
-                    300: '#93c5fd',
-                    400: '#60a5fa',
-                    500: '#3b82f6',
-                    600: '#2563eb',
-                    700: '#1d4ed8',
-                    800: '#1e40af',
-                    900: '#1e3a8a',
+                    50: '#f0f4f9',
+                    100: '#d6e0ed',
+                    200: '#adc1db',
+                    300: '#7da0c7',
+                    400: '#4a7dae',
+                    500: '#215a91',
+                    600: '#002855', // Official Elictel Navy
+                    700: '#002047',
+                    800: '#001838',
+                    900: '#000f28',
                 },
                 elictel: {
                     blue: '#2563eb',

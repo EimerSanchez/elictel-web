@@ -19,14 +19,16 @@ const HeroSection = () => {
     return (
         <section
             id="home"
-            className="relative h-screen flex items-center justify-center text-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-100"
+            className="relative h-screen flex items-center justify-center text-center overflow-hidden bg-white"
         >
-            {/* Animated Background Pattern */}
-            <div className="absolute inset-0 z-0 opacity-10 tech-pattern"></div>
-
-            {/* Floating Gradient Orbs */}
-            <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-            <div className="absolute bottom-20 right-10 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse delay-1000"></div>
+            {/* Background Image */}
+            <div className="absolute inset-0 z-0">
+                <img
+                    src="/images/agrotech-bg.png"
+                    alt="Agrotechnology Background"
+                    className="w-full h-full object-cover opacity-50"
+                />
+            </div>
 
             <motion.div
                 className="relative z-10 p-4 max-w-5xl"
@@ -40,7 +42,7 @@ const HeroSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                    <span className="text-blue-600">{companyData.name}</span>
+                    <span className="text-primary-600">{companyData.name}</span>
                 </motion.h1>
 
                 <motion.p
@@ -82,15 +84,15 @@ const HeroSection = () => {
                     transition={{ duration: 0.8, delay: 0.8 }}
                 >
                     <div className="px-6">
-                        <div className="text-4xl font-bold text-blue-600">{companyData.years}+</div>
+                        <div className="text-4xl font-bold text-primary-600">{companyData.years}+</div>
                         <div className="text-sm text-gray-600 mt-1">{t.about.title}</div>
                     </div>
                     <div className="px-6">
-                        <div className="text-4xl font-bold text-blue-600">5</div>
+                        <div className="text-4xl font-bold text-primary-600">5</div>
                         <div className="text-sm text-gray-600 mt-1">{language === 'es' ? 'Servicios' : 'Services'}</div>
                     </div>
                     <div className="px-6">
-                        <div className="text-4xl font-bold text-blue-600">100+</div>
+                        <div className="text-4xl font-bold text-primary-600">100+</div>
                         <div className="text-sm text-gray-600 mt-1">{language === 'es' ? 'Proyectos' : 'Projects'}</div>
                     </div>
                 </motion.div>
@@ -102,7 +104,7 @@ const HeroSection = () => {
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 1.5, repeat: Infinity }}
             >
-                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                 </svg>
             </motion.div>
