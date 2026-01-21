@@ -43,7 +43,7 @@ const Navigation = () => {
                     <img
                         src="/images/logo.png"
                         alt={companyData.name}
-                        className="h-16 w-auto transition-transform duration-300 hover:scale-105"
+                        className="h-24 w-auto transition-transform duration-300 hover:scale-105"
                     />
                 </div>
 
