@@ -287,7 +287,7 @@ const ContactSection = () => {
                     <img
                         src="/images/logo.png"
                         alt={companyData.name}
-                        className="h-[120px] w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
+                        className="h-[240px] w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
                     />
                     <p className="text-sm text-gray-500 text-center">
                         &copy; {new Date().getFullYear()} {companyData.name}. {t.footer.rights}
