@@ -23,9 +23,9 @@ export const companyData = {
         en: "To be the leading company in technological integration in Colombia, optimizing industry and agribusiness processes, and positively impacting people's lives through high-quality solutions that strengthen their productivity and economy."
     },
     contact: {
-        location: "Calle 39 No. 15-13 Oficina 203, Bogotá, Colombia",
+        location: "Km 1 vía Cota-Chía, Diagonal a la estación de Petrobras, Cota, Colombia",
         phone: "+57 300 3250842",
-        email: "gerencia@elictel.com.co",
+        email: "contactanos@elictel.com.co",
         website: "www.elictel.com.co",
         whatsapp: "573003250842" // Sin + ni espacios para el link
     },

@@ -13,7 +13,7 @@ function App() {
             <div className="min-h-screen font-sans antialiased text-gray-800">
                 <Navigation />
                 <main>
-                    <HeroSection />
+                    <HeroSection sectionHeight="70vh" bgHeight="100%" />
                     <AboutSection />
                     <ServicesSection />
                     <ContactSection />

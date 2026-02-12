@@ -4,7 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 import companyData from '../data/companyData';
 import translations from '../data/translations';
 
-const HeroSection = () => {
+const HeroSection = ({ bgHeight = '100%', sectionHeight = '100vh' }) => {
     const { language } = useLanguage();
     const t = translations[language];
 
@@ -19,14 +19,15 @@ const HeroSection = () => {
     return (
         <section
             id="home"
-            className="relative h-screen flex items-center justify-center text-center overflow-hidden bg-white"
+            className="relative flex items-center justify-center text-center overflow-hidden bg-white"
+            style={{ height: sectionHeight }}
         >
             {/* Background Image */}
-            <div className="absolute inset-0 z-0">
+            <div className="absolute top-0 left-0 w-full z-0 overflow-hidden" style={{ height: bgHeight }}>
                 <img
                     src="/images/agrotech-bg.png"
                     alt="Agrotechnology Background"
-                    className="w-full h-full object-cover opacity-50"
+                    className="w-full h-full object-cover object-[center_30%] opacity-80"
                 />
             </div>
 
@@ -84,16 +85,16 @@ const HeroSection = () => {
                     transition={{ duration: 0.8, delay: 0.8 }}
                 >
                     <div className="px-6">
-                        <div className="text-4xl font-bold text-primary-600">{companyData.years}+</div>
-                        <div className="text-sm text-gray-600 mt-1">{t.about.title}</div>
+                        <div className="text-4xl font-bold text-primary-600 underline decoration-4 decoration-orange-500 underline-offset-8">{companyData.years}+</div>
+                        <div className="text-lg font-bold text-primary-900 mt-4">{t.about.title}</div>
                     </div>
                     <div className="px-6">
-                        <div className="text-4xl font-bold text-primary-600">5</div>
-                        <div className="text-sm text-gray-600 mt-1">{language === 'es' ? 'Servicios' : 'Services'}</div>
+                        <div className="text-4xl font-bold text-primary-600 underline decoration-4 decoration-orange-500 underline-offset-8">5</div>
+                        <div className="text-lg font-bold text-primary-900 mt-4">{language === 'es' ? 'Servicios' : 'Services'}</div>
                     </div>
                     <div className="px-6">
-                        <div className="text-4xl font-bold text-primary-600">100+</div>
-                        <div className="text-sm text-gray-600 mt-1">{language === 'es' ? 'Proyectos' : 'Projects'}</div>
+                        <div className="text-4xl font-bold text-primary-600 underline decoration-4 decoration-orange-500 underline-offset-8">100+</div>
+                        <div className="text-lg font-bold text-primary-900 mt-4">{language === 'es' ? 'Proyectos' : 'Projects'}</div>
                     </div>
                 </motion.div>
             </motion.div>
@@ -104,9 +105,15 @@ const HeroSection = () => {
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 1.5, repeat: Infinity }}
             >
-                <svg className="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
+                <button
+                    onClick={scrollToServices}
+                    className="flex flex-col items-center gap-2 text-primary-600 hover:text-primary-700 transition-colors cursor-pointer outline-none"
+                    aria-label="Scroll to services"
+                >
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
+                </button>
             </motion.div>
         </section>
     );

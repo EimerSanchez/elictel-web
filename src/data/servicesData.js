@@ -1,4 +1,4 @@
-import { Wifi, Cloud, Code, Aperture, Shield } from 'lucide-react';
+import { Wifi, Cloud, Code, Aperture, Shield, BarChart3 } from 'lucide-react';
 
 export const servicesData = {
     es: [
@@ -41,6 +41,14 @@ export const servicesData = {
             description: "Implementación de firewalls de próxima generación (NGFW), sistemas IPS/IDS, filtrado de tráfico y políticas Zero Trust para mitigar riesgos cibernéticos.",
             details: "Realizamos análisis de vulnerabilidades (OWASP, NIST, ISO 27001) y emitimos planes de remediación para fortalecer la postura de seguridad, protegiendo la integridad y confidencialidad de los datos.",
             image: "/images/seguridad.png"
+        },
+        {
+            id: 'analitica',
+            title: "Inteligencia de Datos y Analítica Estratégica",
+            icon: BarChart3,
+            description: "Transformamos datos en decisiones estratégicas de alto impacto. Integramos y analizamos información en tiempo real para optimizar procesos y reducir costos operativos.",
+            details: "Aplicamos modelos predictivos e inteligencia artificial para anticipar riesgos, identificar oportunidades de crecimiento y fortalecer la competitividad mediante soluciones basadas en evidencia.",
+            image: "/images/inteligencia-datos.png"
         }
     ],
     en: [
@@ -83,6 +91,14 @@ export const servicesData = {
             description: "Implementation of next-generation firewalls (NGFW), IPS/IDS systems, traffic filtering, and Zero Trust policies to mitigate cyber risks.",
             details: "We perform vulnerability analysis (OWASP, NIST, ISO 27001) and issue remediation plans to strengthen security posture, protecting data integrity and confidentiality.",
             image: "/images/seguridad.png"
+        },
+        {
+            id: 'analitica',
+            title: "Data Intelligence and Strategic Analytics",
+            icon: BarChart3,
+            description: "We transform data into high-impact strategic decisions. We integrate and analyze real-time information to optimize processes and reduce operational costs.",
+            details: "We apply predictive models and artificial intelligence to anticipate risks, identify growth opportunities, and strengthen competitiveness through evidence-based solutions.",
+            image: "/images/inteligencia-datos.png"
         }
     ]
 };
